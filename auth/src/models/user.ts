@@ -6,12 +6,12 @@ import { WalletData } from './web3';
 export interface User {
     /** the user's unique database ID */
     userID: string;
+    /** when the account was created */
+    createdTimestamp: number;
     /** the user's X (formerly twitter) profile (if linked) */
     xProfile?: XProfile;
     /** the user's discord profile (if linked) */
     discordProfile?: DiscordProfile;
-    /** when the account was created */
-    createdTimestamp: number;
     /** the user's Web3 wallet data, created when the user signs up for the first time */
     walletData: WalletData;
 }
