@@ -5,7 +5,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.TS_PORT!;
+const PORT = process.env.PORT!;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
