@@ -1,4 +1,3 @@
-import { Profile as TwitterProfile } from '@superfaceai/passport-twitter-oauth2';
 import { ExtendedXProfile } from './profiles';
 
 declare global {
