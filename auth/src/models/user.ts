@@ -5,7 +5,7 @@ import { WalletData } from './web3';
  */
 export interface User {
     /** the user's unique database ID */
-    userID: string;
+    userId: string;
     /** when the account was created */
     createdTimestamp: number;
     /** the user's X (formerly twitter) profile (if linked) */
@@ -21,7 +21,7 @@ export interface User {
  */
 export interface XProfile {
     /** the user's X ID */
-    xID: string;
+    xId: string;
     /** the user's X username */
     xUsername: string;
     /** the user's X display name */
@@ -35,7 +35,7 @@ export interface XProfile {
  */
 export interface DiscordProfile {
     /** the user's unique discord ID */
-    discordID: string;
+    discordId: string;
     /** the user's discord display name */
     displayName: string | null;
     /** the user's discord username */
