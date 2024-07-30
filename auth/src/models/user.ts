@@ -8,12 +8,26 @@ export interface User {
     userId: string;
     /** when the account was created */
     createdTimestamp: number;
-    /** the user's X (formerly twitter) profile (if linked) */
+    /** the user's main auth data (if created or registered via email) */
+    authData?: AuthData;
+    /** the user's X (formerly twitter) profile (if linked or registered via X) */
     xProfile?: XProfile;
     /** the user's discord profile (if linked) */
     discordProfile?: DiscordProfile;
     /** the user's Web3 wallet data, created when the user signs up for the first time */
     walletData: WalletData;
+}
+
+/**
+ * Represent's the user's authentication data.
+ */
+export interface AuthData {
+    /** the user's main linked email */
+    email: string;
+    /** if the main linked email is confirmed */
+    emailConfirmed: boolean;
+    /** the hashed password */
+    hashedPassword: string;
 }
 
 /**

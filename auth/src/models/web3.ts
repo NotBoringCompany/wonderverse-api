@@ -15,8 +15,8 @@ export interface WalletData {
 export interface MainWallet {
     /** the wallet's address */
     address: string;
-    /** the wallet's private key */
-    privateKey: string;
+    /** the wallet's private key, encrypted for extra security */
+    encryptedPrivateKey: string;
 }
 
 /**

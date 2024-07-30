@@ -18,7 +18,8 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mongoose": "^8.5.1",
-    "passport": "^0.7.0"
+    "passport": "^0.7.0",
+    "viem": "^2.18.5"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
